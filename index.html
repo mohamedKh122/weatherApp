@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/media.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg py-5">
+                <div class="container-fluid">
+                  <a class="navbar-brand fw-bold" href="#"><img class="me-3" src="Photo/logo.png" alt="weather logo"> Weather <small class="d-block ">togline goes here</small> </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">News</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Live cameras</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Photos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <main>
+        <section id="weather" class="py-5" >
+            <div class="container">
+                <div class="form position-relative my-5">
+                    <input id="area" type="text" placeholder="Find your location..." class="rounded-5 w-100 border-0">
+                    <button class="position-absolute btn text-white fs-6 rounded-5">Find</button>
+                </div>
+
+                <div class="table-info row mt-5 pt-4">
+                    <div class="col-lg-4">
+                        <div class="table-content today rounded-top-3">
+                            <div class="header rounded-top-3 d-flex justify-content-between">
+                                <h4 id="currentDay">....</h4>
+                                <h4 id="date">....</h4>
+                            </div>
+                            <div class="info">
+                                <h2 id="location">Location</h2>
+                                <h1 id="todayTemp" class="text-white">Temp</h1>
+                                <img id="icon" src="Photo/113.png" alt="sun sunny">
+                                <p id="desToday" class="des mb-4">...</p>
+                                <div class="icons d-flex gap-4 justify-content-center mt-5">
+                                    <div class="icon1 d-flex gap-2">
+                                        <img src="Photo/icon-umberella.png" alt="umberella">
+                                        <p class="humidity">20%</p>
+                                    </div>
+                                    <div class="icon2 d-flex gap-2">
+                                        <img src="Photo/icon-wind.png" alt="wind icon">
+                                        <p class="windKm">18km/h</p>
+                                    </div>
+                                    <div class="icon3 d-flex gap-2">
+                                        <img src="Photo/icon-compass.png" alt="compass icon">
+                                        <p class="direction">East</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="table-content day2 rounded-top-3">
+                            <div class="header text-center rounded-top-3">
+                                <h4 id="nextDayDate">...</h4>
+                            </div>
+                            <div class="info">
+                                <img id="iconD2" src="Photo/113.png" alt="sun sunny">
+                                <h3 id="maxTempday2" class="text-white fs-2 m-0">...</h3>
+                                <p id="minTempday2"  class="fs-5 mb-2">...</p>
+                                <p id="descriptDay2" class="des mb-4">...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="table-content day3 rounded-top-3 ">
+                            <div class="header text-center rounded-top-3">
+                                <h4 id="day3Date">...</h4>
+                            </div>
+                            <div class="info">
+                                <img id="iconD3" src="Photo/113.png" alt="sun sunny">
+                                <h3 id="maxTempday3" class="text-white fs-2 m-0">...</h3>
+                                <p id="minTempD3" class="fs-5 mb-2">...</p>
+                                <p id="descriptDay3" class="des mb-4">...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer" class="py-5">
+            <div class="container">
+                <div class="row gy-3">
+                    <div class="col-lg-8">
+                        <div class="form2 position-relative">
+                            <input placeholder="Enter your email to subscribe..." class="w-100 rounded-5 border-0" type="text">
+                            <button class="btn rounded-5 text-white position-absolute">Subscripe</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 align-content-center ">
+                        <div class="icons d-flex justify-content-center ">
+                            <i class="fa-brands fa-facebook fs-5 "></i>
+                            <i class="fa-brands fa-twitter fs-5 "></i>
+                            <i class="fa-brands fa-google-plus fs-5 "></i>
+                            <i class="fa-brands fa-pinterest fs-5 "></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </section>
+    </main>
+<script src="JS/bootstrap.bundle.js"></script>
+<script src="JS/index.js"></script>
+</body>
+</html>
