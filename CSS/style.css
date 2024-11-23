@@ -54,7 +54,7 @@ small{
 /* End NavBar */
 /* Start Form */
 #weather{
-    background-image: url('/Photo/banner.png');
+    background-image: url('../Photo/banner.png');
     height: 100%;
     background-repeat: no-repeat;
 }
